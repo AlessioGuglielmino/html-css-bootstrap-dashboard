@@ -26,12 +26,77 @@
   </head>
   <body>
     <!-- HEADER  -->
-
     <header>
-      <div class="container-fluid"></div>
+      <nav class="navbar h-100 w-100 navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <img src="./img/mobile-logo.png" alt="" class="logo-mobile" />
+          <form class="d-flex flex-grow-1" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Prova a cercare: Lezioni Laravel"
+              aria-label="Search"
+            />
+          </form>
+
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bell" style="color: #f49e0b"></i>
+          </button>
+
+          <div
+            class="collapse navbar-collapse flex-grow-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <i class="fa-solid fa-list-ul"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-circle-question"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="fa-solid fa-bell" style="color: #f49e0b"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <!-- MAIN  -->
+    <!--************************** MAIN  **************************-->
 
     <main class="d-flex">
       <!-- NAV LEFT-SIDE -->
@@ -62,7 +127,7 @@
             class="d-flex align-items-center justify-content-center fs-5 gap-3 my-5"
           >
             <div
-              class="d-flex flex-column justify-content-start align-items-center gap-4"
+              class="d-flex flex-column me-4 justify-content-start align-items-center gap-4"
             >
               <i class="fa-solid fa-house"> </i>
               <i class="fa-solid fa-chart-simple"></i>
@@ -75,7 +140,9 @@
           <div
             class="d-flex align-items-center justify-content-center gap-3 fs-5 my-5"
           >
-            <i class="fa-solid fa-gear"></i>
+            <div class="me-4">
+              <i class="fa-solid fa-gear"></i>
+            </div>
             <div>
               <a href="#">User</a>
             </div>
@@ -84,7 +151,14 @@
       </nav>
       <!-- MAIN CONTENT -->
 
-      <div class="main-content"></div>
+      <div class="main-content">
+        <div class="jumbo">
+          <div class="container-fluid">ciao</div>
+        </div>
+        <div class="content">
+          <div class="container-fluid">ciao</div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

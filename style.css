@@ -1,14 +1,18 @@
 /* CLASSI HEADER */
 header {
   height: 80px;
-  background-color: lightgray;
 }
-
+.logo-mobile {
+  width: 60px;
+}
 /* CLASSI NAVBAR */
 nav {
-  width: 50px;
+  width: 80px;
   background-color: aqua;
   height: calc(100vh - 80px);
+  background-image: url(./img/sidebar-bg.png);
+  background-color: #11283e;
+  color: white;
 }
 a {
   text-decoration: none;
@@ -21,7 +25,12 @@ a {
   height: calc(100vh - 80px);
 }
 
+.jumbo {
+  background-color: #1b72e8;
+  height: 20vh;
+}
 /************ CLASSI RESPONSIVE ************/
+/* NAVBAR */
 @media screen and (min-width: 991px) {
   nav {
     width: 200px;
@@ -37,3 +46,4 @@ a {
     display: none;
   }
 }
+/* HEADER */
