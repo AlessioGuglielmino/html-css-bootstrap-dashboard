@@ -1,0 +1,39 @@
+/* CLASSI HEADER */
+header {
+  height: 80px;
+  background-color: lightgray;
+}
+
+/* CLASSI NAVBAR */
+nav {
+  width: 50px;
+  background-color: aqua;
+  height: calc(100vh - 80px);
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+/* CLASSI MAIN */
+.main-content {
+  width: calc(100% - 50px);
+  background-color: skyblue;
+  height: calc(100vh - 80px);
+}
+
+/************ CLASSI RESPONSIVE ************/
+@media screen and (min-width: 991px) {
+  nav {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .nav-small {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nav-large {
+    display: none;
+  }
+}
